@@ -7,10 +7,10 @@ my $i = 4;
 my $d = 4.0;
 my $s = 'HackerRank ';
 
-my $a=<>;
-my $b=<>;
-my $c=<>;
+my $a = <>;
+my $b = <>;
+my $c = <>;
 
-print $a+$i."\n";
-printf("%.1f\n",($b+$d));
+print $a + $i."\n";
+printf("%.1f\n", ($b + $d));
 print $s.$c."\n";
