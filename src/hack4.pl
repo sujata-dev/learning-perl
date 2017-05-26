@@ -3,10 +3,9 @@
 use strict;
 use warnings;
 
-my $i;
-my $n=<>;
+my $n = <>;
 my $ans;
-for($i=1;$i<=10;$i++)
+for(my $i = 1; $i <= 10; $i++)
 {
-    printf("%d x %d = %d\n",$n,$i,($n*$i));
+    printf("%d x %d = %d\n", $n, $i, ($n * $i));
 }
