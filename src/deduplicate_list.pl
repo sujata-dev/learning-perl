@@ -3,11 +3,12 @@
 use strict;
 use warnings;
 
-my %unique;
+
 sub dedup
 {
-    foreach(@_){$unique{$_}++};
+    my %unique;
+    foreach(@_){$unique{$_}++;}
+    return keys %unique;
 }
 
-dedup(1,2,6,9,2,1,3);
-print keys %unique;
+print dedup(1,2,6,9,2,1,3);
