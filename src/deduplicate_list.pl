@@ -3,13 +3,11 @@
 use strict;
 use warnings;
 
-my (@arr1, @arr2);
+my %unique;
 sub dedup
 {
-    @arr1 = @arr2 = @_;
+    foreach(@_){$unique{$_}++};
 }
 
-dedup((1,2,3,4));
-print @arr1;
-print "\n";
-print @arr2;
+dedup(1,2,6,9,2,1,3);
+print keys %unique;
