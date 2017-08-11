@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # To count the number of words in a user-entered paragraph
 use strict;
 use warnings;
