@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Subroutine to accept two numbers as arguments, and return the product
 use strict;
 use warnings;
