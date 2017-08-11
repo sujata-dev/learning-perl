@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # To remove duplicate characters from a user-entered string
 use strict;
 use warnings;
