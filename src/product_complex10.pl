@@ -9,34 +9,34 @@ sub product
     my @imag = @{$_[1]};
     my $len = $_[2];
     my ($rprod, $iprod) = (1, 1);
-    for(my $i = 0; $i < $len/2; $i++)
+    for(0 .. (($len / 2) - 1))
     {
-        $rprod *= $real[$i];
+        $rprod *= $real[$_];
     }
-    for(my $j = 0; $j < $len/2; $j++)
+    for(0 .. (($len / 2) - 1))
     {
-        $iprod *= $imag[$j];
+        $iprod *= $imag[$_];
     }
     return $rprod." + ".$iprod."i";
 }
-my $i = 1;
 my (@arr, @real, @imag, @realimag);
-while($i <= 3)
+for(1..10)
 {
-    print "Enter $i complex number x and y (in terms of x + yi): ";
+    print "Enter $_ complex number x and y (in terms of x + yi): ";
     chomp(my $str = <>);
     my($x, $y) = split(" ", $str);
     push(@realimag, $x);
     push(@realimag, $y);
-    $i++;
 }
 my $len = @realimag;
-for(my $j = 0; $j < $len; $j = $j + 2)
+for(0..$len-1)
 {
-    push(@real, $realimag[$j]);
+    next if($_ % 2 != 0);
+    push(@real, $realimag[$_]);
 }
-for(my $j = 1; $j < $len; $j = $j + 2)
+for(1..$len-1)
 {
-    push(@imag, $realimag[$j]);
+    next if($_ % 2 == 0);
+    push(@imag, $realimag[$_]);
 }
 print product(\@real, \@imag, $len);
