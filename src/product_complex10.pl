@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # To accept and store ten complex numbers from the user and find their product
 use strict;
 use warnings;
