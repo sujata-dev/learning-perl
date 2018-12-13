@@ -8,7 +8,7 @@ chomp(my $str = <>);
 my @arr = split("", $str);
 my ($x, $y) = (-1, scalar(@arr));
 
-for(0..@arr - 1)
+for(0 .. @arr - 1)
 {
     if($_ < (@arr / 2))
     {
