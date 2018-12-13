@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# find count of triplets with sum smaller than given sum value
+# Convert array into Zig-Zag fashion
 use strict;
 use warnings;
 
