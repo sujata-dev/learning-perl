@@ -1,12 +1,4 @@
 #!/usr/bin/perl
-
-##############################
-#    Author: Sujata Dev <sujata.dev@mindstix.com>
-#    Date created: 11/02/18
-#    Perl Version: 5.22
-##############################
-
-
 # Parsing training_data into domain.yml format
 
 use strict;
